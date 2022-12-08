@@ -1,0 +1,152 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+}
+
+.menu_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.menu{
+    display: flex;
+    column-gap: 2.7rem;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.nav_links{
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu_icons{
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+}
+
+.menu_icons span i{
+    font-size: 2.0 rem;
+    cursor: pointer;
+}
+
+.menu_icons span img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu_mobile{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+    cursor: pointer;
+}
+
+.nav_active{
+    font-weight: 800 !important;
+}
+
+.cart_icon ,.heart_icon{
+  position: relative;  
+}
+
+.badge{
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 29%;
+    right: -20%;
+    z-index: 10;
+    font-size: 0.6rem;
+    color: #fff;
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:768px) {
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.53);
+        display: none;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active_menu{
+        display: block;
+    }
+    .menu_mobile{
+        display: block;
+    }
+    .menu_mobile span i{
+        font-size: 1.1rem !important;
+    }
+
+    .menu_icons span img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .logo image{
+        width: 1rem;
+        height: 1rem;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+
+    .heart_icon i, .cart_icon i {
+        font-size: 1.2rem !important;
+    }
+
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+}

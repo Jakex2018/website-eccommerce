@@ -1,0 +1,36 @@
+.checkout_details form input{
+    border: 1px solid var( --card-bg-02);
+    width: 100%;
+    padding: 10px;
+}
+
+.checkout_details form {
+    margin-top: 10px;   
+}
+
+.checkout_box{
+    background: var(--primary-color);
+    padding: 50px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.checkout_box h6 , h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout_box h6 {
+    margin-bottom: 20px;
+}
+
+.checkout_box h4 {
+    border-top: 1px solid rgba(221, 221, 221, 0.253);
+    padding-top: 20px;
+}
+
+.auth_bottom{
+    background: #fff;
+    color: var(--primary-color);
+}
