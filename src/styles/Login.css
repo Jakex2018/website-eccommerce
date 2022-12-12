@@ -27,7 +27,7 @@
     border: 1px solid var(--card-bg-02);
 }
 
-.form-group input[type="file"]{
+.form_group input[type="file"]{
     color: #fff;
 }
 
